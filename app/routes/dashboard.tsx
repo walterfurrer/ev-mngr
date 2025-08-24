@@ -1,11 +1,11 @@
 import { Outlet } from "react-router";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+import { DashboardSidebar } from "@/components/dashboard-sidebar"
 
 export default function Dashboard() {
   return (
     <SidebarProvider>
-      <AppSidebar />
+      <DashboardSidebar />
       <main>
         <SidebarTrigger />
         <Outlet />
