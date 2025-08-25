@@ -7,8 +7,10 @@ export default function Dashboard() {
     <SidebarProvider>
       <DashboardSidebar />
       <main>
-        <SidebarTrigger />
-        <Outlet />
+        <div id="root">
+          <SidebarTrigger />
+          <Outlet />
+        </div>
       </main>
     </SidebarProvider>
   )
